@@ -19,7 +19,7 @@ const app = express()
 const port = 3000
 
 app.use(express.json())
-app.get('/message', (req, res) => res.send("Server is active"))
+app.get('/', (req, res) => res.send("Welcome"))
 app.use('/users', userRoute)
 app.use('/projects', projectRoute)
 app.use('/tasks', taskRoute)
